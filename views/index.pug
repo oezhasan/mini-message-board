@@ -2,8 +2,9 @@ extends layout
 
 block content
 
+  a(href='/new') New Entry
+
   ul
     each val in messages
-      li = val.text
-      li = val.user
-      li = val.added
+      li= val.text + ", " + val.user + ", " + val.added
+      
